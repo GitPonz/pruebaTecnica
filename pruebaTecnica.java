@@ -4,12 +4,13 @@ package pruebaTecnica.pruebaTecnica;
 public class pruebaTecnica {
     public static void main(String[] args) {
         
-        System.out.println("CALCULO IMC: ");
+        System.out.println("CALCULO IMC probando con 100 kilos y 1.50 de altura: ");
         System.out.println(calculoIMC(100.0, 1.50));
-        System.out.println("SUMA DIGITOS: ");
-        System.out.println(sumaDigitos(46));
-        
-        System.out.println("MOVIENDO CEROS: ");
+        System.out.println("SUMA DIGITOS probando (10 y 12): ");
+        System.out.println(sumaDigitos(10));
+        System.out.println(sumaDigitos(12));
+
+        System.out.println("MOVIENDO CEROS (0,a,0,b,c): ");
         //String[] array = {"0","0", "0", "0", "0"};
         String[] array = {"0","a", "0", "b", "c"};
         
@@ -81,7 +82,7 @@ public class pruebaTecnica {
  
 
     // SOLO ACEPTA STRING PERO CREO QUE SE HACE UTILIZANDO LA CLASE OBJECT
-    
+
     public static String[] moviendoCeros(String[] array){       //Suponemos que es no es un arrayList, si lo fuera se utilziarian los metodos .remove y .add
 
 
