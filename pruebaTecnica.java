@@ -4,13 +4,16 @@ package pruebaTecnica.pruebaTecnica;
 public class pruebaTecnica {
     public static void main(String[] args) {
         
-      
-        // System.out.println(calculoIMC(100.0, 1.50));
-
-       // System.out.println(sumaDigitos(46));
-
-        String[] array = {"0","0", "0", "0", "0"};
-        //String[] array = {"0","a", "0", "b", "c"};
+        System.out.println("CALCULO IMC: ");
+        System.out.println(calculoIMC(100.0, 1.50));
+        System.out.println("SUMA DIGITOS: ");
+        System.out.println(sumaDigitos(46));
+        
+        System.out.println("MOVIENDO CEROS: ");
+        //String[] array = {"0","0", "0", "0", "0"};
+        String[] array = {"0","a", "0", "b", "c"};
+        
+        
         String[] res = moviendoCeros(array);
 
         for (String string : res) {
@@ -23,7 +26,7 @@ public class pruebaTecnica {
     public static String calculoIMC(double peso, double altura){
         double IMC=0;
 
-        if (peso > 0 && altura > 0){
+        if (peso > 0 && altura > 0){    //Ya que el switch no funciona con valores double ni float, se ha hecho con varios if 
                 IMC = peso / (altura*altura);
             
                 if (IMC <= 18.5){
@@ -69,7 +72,7 @@ public class pruebaTecnica {
             }
 
         } catch (Exception e) {
-            
+            System.out.println("Error en la funcion sumaDigitos");
         }
         
         return total;
@@ -77,7 +80,8 @@ public class pruebaTecnica {
 
  
 
-
+    // SOLO ACEPTA STRING PERO CREO QUE SE HACE UTILIZANDO LA CLASE OBJECT
+    
     public static String[] moviendoCeros(String[] array){       //Suponemos que es no es un arrayList, si lo fuera se utilziarian los metodos .remove y .add
 
 
